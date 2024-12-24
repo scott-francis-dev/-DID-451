@@ -1,9 +1,26 @@
 
 # **DID:451 Method Specification**
 
+| **Field**       | **Details**                                  |
+|------------------|---------------------------------------------|
+| **Author**      | Scott Francis                                |
+| **Title**      | DID:451 Method Specification                                |
+| **Status**      | Draft                                       |
+| **Category**    | RFC                                         |
+| **Created**     | 2024-12-22                                  |
+
+## Table of Contents  
+
+- [Introduction](#introduction)  
+- [Method Specification](#method-specification)  
+- [Implementation](#implementation)  
+- [Security Considerations](#security-considerations)  
+- [References](#references)
+
+  
 ## **1. Overview**
 
-The `did:451` method provides a decentralized identifier (DID) format for securely identifying and managing multiple entity types, including:
+The `DID:451` method provides a decentralized identifier (DID) format for securely identifying and managing multiple entity types in conjunction with the S3 Green Blockchain from The 451 Project.  This specification endeavors to comply with [W3C Core][https://www.w3.org/TR/did-core/] specification regarding Decentralized Identifiers (DIDs) v1.0.  The entity types covered by this document, include:
 - **Personas**: Individual identities or roles.
 - **Organizations**: Verified or non-verified entities.
 - **Documents**: Files such as JSON, PDF, or binary data.
@@ -14,7 +31,7 @@ The `did:451` method provides a decentralized identifier (DID) format for secure
 - **PDFs**: PDF documents.
 - **Binary**: Generic binary files.
 
-This method ensures flexibility for independent personas that have created Publishing Houses not verified against the Domain Name Service on the Internet, and **DNS-verified organizations**, **non-verified entities**, while adhering to strong cryptographic principles.
+This method ensures flexibility for `personas` (individuals that publish) to create `Publishing Houses` (entities that publish one of more documents).  A `Publishing House` not verified against the Domain Name Service on the Internet is referred to as a **Publishing House** (with no qualifiers) and those that have a top level domain as part of their DID Identifier shall be considered **DNS-verified publishing houses**.  Both of these types of `Publishing Houses` adhere to strong cryptographic principles.
 
 ---
 
